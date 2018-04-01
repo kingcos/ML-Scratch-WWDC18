@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>machine learning</key>
+		<dict>
+			<key>Definition</key>
+			<string>Machine learning is a field of computer science that gives computer systems the ability to &quot;learn&quot; (i.e., progressively improve performance on a specific task) with data, without being explicitly programmed.</string>
+		</dict>
+		<key>mnist</key>
+		<dict>
+			<key>Definition</key>
+			<string>The MNIST database (Modified National Institute of Standards and Technology database) is a large database of handwritten digits that is commonly used for training various image processing systems.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

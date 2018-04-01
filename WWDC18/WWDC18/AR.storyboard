@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3wS-2A-SdP">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="splitview1_2"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Qdu-2f-cbp">
+            <objects>
+                <viewController storyboardIdentifier="ar" id="3wS-2A-SdP" customClass="ARViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YV5-E7-tQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="hE2-wc-5W0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9e-R9-w7j">
+                        <rect key="frame" x="0.0" y="0.0" width="507" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUw-qH-U3l" customClass="BackgroundView">
+                                <rect key="frame" x="20" y="28" width="467" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-nn-To8">
+                                        <rect key="frame" x="209.5" y="20.5" width="48" height="61"/>
+                                        <string key="text">
+Result
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="MtU-nn-To8" firstAttribute="centerX" secondItem="oUw-qH-U3l" secondAttribute="centerX" id="0V0-s9-zJ7"/>
+                                    <constraint firstItem="MtU-nn-To8" firstAttribute="centerY" secondItem="oUw-qH-U3l" secondAttribute="centerY" id="Vvj-TD-sAY"/>
+                                    <constraint firstAttribute="height" constant="100" id="szK-qQ-cCD"/>
+                                </constraints>
+                            </view>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lr-Tv-8Gu">
+                                <rect key="frame" x="20" y="136" width="467" height="624"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3wS-2A-SdP" id="BMy-qg-eir"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFK-Mb-oHh">
+                                <rect key="frame" x="238" y="424" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="add:" destination="3wS-2A-SdP" eventType="touchUpInside" id="DTi-BR-2Nh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hE2-wc-5W0" firstAttribute="top" secondItem="3lr-Tv-8Gu" secondAttribute="bottom" constant="8" symbolic="YES" id="1WT-co-Gqu"/>
+                            <constraint firstItem="TFK-Mb-oHh" firstAttribute="centerY" secondItem="3lr-Tv-8Gu" secondAttribute="centerY" id="8Pk-wT-3lp"/>
+                            <constraint firstItem="oUw-qH-U3l" firstAttribute="top" secondItem="YV5-E7-tQe" secondAttribute="bottom" constant="8" symbolic="YES" id="9s6-Tj-YQb"/>
+                            <constraint firstItem="3lr-Tv-8Gu" firstAttribute="leading" secondItem="g9e-R9-w7j" secondAttribute="leading" constant="20" symbolic="YES" id="IiI-D5-j4o"/>
+                            <constraint firstItem="3lr-Tv-8Gu" firstAttribute="top" secondItem="oUw-qH-U3l" secondAttribute="bottom" constant="8" symbolic="YES" id="JgX-l7-Gfu"/>
+                            <constraint firstItem="TFK-Mb-oHh" firstAttribute="centerX" secondItem="g9e-R9-w7j" secondAttribute="centerX" id="KIt-Dd-LbW"/>
+                            <constraint firstAttribute="trailing" secondItem="3lr-Tv-8Gu" secondAttribute="trailing" constant="20" symbolic="YES" id="Wss-uD-U4d"/>
+                            <constraint firstItem="oUw-qH-U3l" firstAttribute="leading" secondItem="g9e-R9-w7j" secondAttribute="leading" constant="20" symbolic="YES" id="hN3-ft-AFP"/>
+                            <constraint firstAttribute="trailing" secondItem="oUw-qH-U3l" secondAttribute="trailing" constant="20" symbolic="YES" id="ufX-ll-JgD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arSceneView" destination="3lr-Tv-8Gu" id="caz-0S-nFV"/>
+                        <outlet property="resultLabel" destination="MtU-nn-To8" id="rJa-Oj-raF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaO-GT-p3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="107"/>
+        </scene>
+    </scenes>
+</document>
