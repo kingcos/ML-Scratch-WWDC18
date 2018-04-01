@@ -1,16 +1,28 @@
-# WWDC18
+# ML-Scratch
 
-My effort for application of WWDC18 Scholarship.
+My application for WWDC18 Scholarship.
+
+Status: **[Submitted]**
 
 ## Languages
 
-- Swift 4.x
-- Python 2.x
+- Swift 4.0
+- Python 2.7
+
+## Screenshots
+
+![](1.png)
+
+![](2.png)
+
+![](3.png)
 
 ## Frameworks
 
 - Vision
-- Core ML
+- CoreML
+- ARKit
+- SceneKit
 - Turi Create
 
 ## LICENSE
