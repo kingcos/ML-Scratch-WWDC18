@@ -11,11 +11,11 @@ Status: **[Submitted]**
 
 ## Screenshots
 
-![](1.png)
+![](1.PNG)
 
-![](2.png)
+![](2.PNG)
 
-![](3.png)
+![](3.PNG)
 
 ## Frameworks
 
